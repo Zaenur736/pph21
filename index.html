@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pajak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Kalkulator Pajak</h2>
+    <form action="calculate_tax.php" method="post">
+        <label for="gaji">Pendapatan (gaji dan lainnya) per bulan:</label>
+        <input type="number" id="gaji" name="gaji" required>
+        <label for="pengeluaran">Pengeluaran (asuransi, jamsostek, dll) per bulan:</label>
+        <input type="number" id="pengeluaran" name="pengeluaran" required>
+        <label for="thrbonus">Bonus dan THR peroleh dalam setahun:</label>
+        <input type="number" id="thrbonus" name="thrbonus" required>
+        <label for="nikah">Sudah menikah?</label>
+        <select id="nikah" name="nikah" required>
+            <option value="Y">Ya</option>
+            <option value="T">Tidak</option>
+        </select>
+        <label for="tanggungan">Jumlah tanggungan:</label>
+        <input type="number" id="tanggungan" name="tanggungan" required>
+        <input type="submit" value="Hitung">
+    </form>
+</body>
+</html>
